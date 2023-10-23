@@ -28,7 +28,7 @@ String getLibDirectory() {
     return env;
   }
 
-  return '/usr/local/lib';
+  return '\\usr\\local\\lib';
 }
 
 Uri generateDependencyLink(String name, String version, String fileType) {
