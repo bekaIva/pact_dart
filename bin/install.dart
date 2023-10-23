@@ -36,7 +36,7 @@ Uri generateDependencyLink(String name, String version, String fileType) {
       Platform.operatingSystem == 'macos' ? 'osx' : Platform.operatingSystem;
 
   final path =
-      '/pact-foundation/pact-reference/releases/download/$name-v$version/$name-$operatingSystem-x86_64.$fileType.gz';
+      '/pact-foundation/pact-reference/releases/download/lib$name-v$version/$name-$operatingSystem-x86_64.$fileType.gz';
 
   return Uri(scheme: 'https', host: 'github.com', path: path);
 }
